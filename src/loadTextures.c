@@ -13,21 +13,21 @@ void loadImages(char *mapName)
 
         if (strcmp(mapName, "maps/maze_01") == 0)
         {
-                imgSrc[0] = IMG_Load("textures/wall1.png");
-                imgSrc[1] = IMG_Load("textures/wall2.png");
-                imgSrc[2] = IMG_Load("textures/window1.png");
-                imgSrc[3] = IMG_Load("textures/window2.png");
-                imgSrc[4] = IMG_Load("textures/ceiling.png");
-                imgSrc[5] = IMG_Load("textures/floorboard.png");
+                imgSrc[0] = IMG_Load("images/wall1.png");
+                imgSrc[1] = IMG_Load("images/wall2.png");
+                imgSrc[2] = IMG_Load("images/window1.png");
+                imgSrc[3] = IMG_Load("images/window2.png");
+                imgSrc[4] = IMG_Load("images/ceiling.png");
+                imgSrc[5] = IMG_Load("images/floorboard.png");
         }
         else
         {
-                imgSrc[0] = IMG_Load("textures/wall1.png");
-                imgSrc[1] = IMG_Load("textures/wall2.png");
-                imgSrc[2] = IMG_Load("textures/window1.png");
-                imgSrc[3] = IMG_Load("textures/window2.png");
-                imgSrc[4] = IMG_Load("textures/ceiling.png");
-                imgSrc[5] = IMG_Load("textures/floorboard.png");
+                imgSrc[0] = IMG_Load("images/wall1.png");
+                imgSrc[1] = IMG_Load("images/wall2.png");
+                imgSrc[2] = IMG_Load("images/window1.png");
+                imgSrc[3] = IMG_Load("images/window2.png");
+                imgSrc[4] = IMG_Load("images/ceiling.png");
+                imgSrc[5] = IMG_Load("images/floorboard.png");
         }
 
         /* get colors from texture elements and put in array */
