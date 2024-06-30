@@ -1,4 +1,4 @@
-#include "maze.h"
+#include "header/maze.h"
 
 /**
  * loadImages - loads images from file and puts element information in buffer
@@ -7,7 +7,7 @@
  */
 void loadImages(char *mapName)
 {
-        SDL_Surface *imgSrc[TOTAL_TEXTURE]; /* array of loaded textures */
+        SDL_Surface *imgSrc[TEX_COUNT]; /* array of loaded textures */
         uint8_t *element; /* color value of element at given coordinate */
         int a, b, c; /* loop counters */
 
@@ -31,7 +31,7 @@ void loadImages(char *mapName)
         }
 
         /* get colors from texture elements and put in array */
-        for (a = 0; a < TOTAL_TEXTURE; a++)
+        for (a = 0; a < TEX_COUNT; a++)
         {
                 for (b = 0; b < TEX_HEIGHT; b++)
                 {
@@ -48,7 +48,7 @@ tiles[a][b][c] = element[0] | element[1] << 8
         }
 
         /* free SDL_Surfaces */
-        for (a = 0; a < TOTAL_TEXTURE; a++)
+        for (a = 0; a < TEX_COUNT; a++)
         {
                 SDL_FreeSurface(imgSrc[a]);
                 imgSrc[a] = NULL;

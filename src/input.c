@@ -1,4 +1,4 @@
-#include "maze.h"
+#include "header/maze.h"
 
 /**
  * movement - checks for the keys pressed by user for movement

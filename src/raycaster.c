@@ -1,4 +1,4 @@
-#include "maze.h"
+#include "header/maze.h"
 
 /**
  * raycaster - casts rays and renders walls, floor, and ceiling
