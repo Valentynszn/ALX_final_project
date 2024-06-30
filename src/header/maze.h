@@ -12,8 +12,8 @@
 #define MAP_CHAR_COUNT 1275
 
 /* header files */
-#include <SDL.h>
-#include <SDL_image.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

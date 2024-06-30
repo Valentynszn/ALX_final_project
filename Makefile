@@ -2,7 +2,10 @@
 CC = gcc
 
 # Source files
-SRC = src/*.c
+SRC = $(wildcard src/*.c)
+
+# Object files
+OBJ = $(SRC:.c=.o)
 
 # Executable name
 NAME = playgame
@@ -11,7 +14,7 @@ NAME = playgame
 RM = rm -f
 
 # Compiler flags
-CFLAGS = -O2 -g -Wall -Werror -Wextra -pedantic -Isrc/headers
+CFLAGS = -Wall -Werror -Wextra -pedantic -Isrc/headers
 
 # Linker flags
 LFLAGS = -lSDL2 -lSDL2_image -lm
@@ -19,11 +22,18 @@ LFLAGS = -lSDL2 -lSDL2_image -lm
 # SDL Flags
 SDLFLAGS = `sdl2-config --cflags --libs`
 
+# Default target
+all: $(NAME)
 
-# Compiles executable
-all: $(SRC)
-	$(CC) $(SRC) $(CFLAGS) $(LFLAGS) -o $(NAME) $(SDLFLAGS)
+# Link object files to create executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) $(CFLAGS) $(LFLAGS) -o $(NAME) $(SDLFLAGS)
+
+# Compile source files to object files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Remove temporary files and executable
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) $(OBJ) $(NAME)
+
