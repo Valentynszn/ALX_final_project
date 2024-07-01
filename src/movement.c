@@ -18,7 +18,7 @@ void movement(int *maze)
         prevTime = time;
         time = SDL_GetTicks();
         frameTime = (time - prevTime) / 1000.0;
-        Speed = (frameTime * 5.0) / 2;
+        Speed = (frameTime * 5.0);
         turningSpeed = (frameTime * 3.0) / 2;
 
         /* key for moving forward if no wall is in front */
