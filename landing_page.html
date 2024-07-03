@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="icon" href="images/logo.jpg">
+    <style>
+        .cover {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('images/cover_image.jpg');
+            background-size: cover;
+            color: white;
+               }
+        .cover
+        h1 {font-size: 50px;}
+        .cover
+        p {font-size: 20px;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+             }
+        .button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+                }
+                .header {
+            background-color: #1044d3;
+            overflow: hidden;
+        }
+        .header a {
+            float: left;
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .header a:hover {
+            background-color: whitesmoke;
+            color: rgb(33, 13, 218);
+        }        
+    </style>
+</head>
+<body>
+    <section id="home" class="cover">
+        <h1>3D Maze Game</h1>
+        <p>Explore the immersive 3D maze game, challenging your navigation skills! to play this game you will need to clone the repository and run playgame</p>
+        <a href="https://deployedprojecturl.com" class="button">Play the Game</a>
+    </section>
+    <div class="header">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+    </div>
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Feature : Intuitive Controls</h3>
+                <p>To move around the maze you can use this buttons W,A,D,S. the W button is to move forward, The S is to move bacwards, the a button is to turn to the left and the D button is to turn to the right. Other features will be added as we update the game</p>
+            </div>
+    </section>
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>This project was inspired by our passion for game development and the challenge of implementing raycasting techniques in C. We chose C because it was part of the requirement. Our team collaborated via GitHub and communicated through WhatsApp to ensure smooth progress and overcome challenges such as SDL initialization issues and raycasting bugs.</p>
+    </section>
+    <a href="#home">Home</a>
+</body>
+</html>
