@@ -47,16 +47,30 @@
         .header a:hover {
             background-color: whitesmoke;
             color: rgb(33, 13, 218);
-        }        
+        }
+        .features {
+            display: inline-block;
+            justify-content: space-evenly;
+            padding: 30px;
+        }
+        .feature {
+            text-align: left;
+            width: 30%;
+        }
+        .feature img {
+            width: 300%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <section id="home" class="cover">
         <h1>3D Maze Game</h1>
-        <p>Explore the immersive 3D maze game, challenging your navigation skills! to play this game you will need to clone the repository and run playgame</p>
+        <p>Explore the immersive <strong>3D maze game</strong>, challenging your navigation skills! To play this game you will need to clone the repository and run playgame</p>
         <a href="https://deployedprojecturl.com" class="button">Play the Game</a>
     </section>
     <div class="header">
+        <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#about">About</a>
     </div>
@@ -64,15 +78,48 @@
         <h2>Key Features</h2>
         <div class="features">
             <div class="feature">
-                <h3>Feature : Intuitive Controls</h3>
-                <p>To move around the maze you can use this buttons W,A,D,S. the W button is to move forward</p>,
-                <p></p>The S is to move bacwards, the a button is to turn to the left and the D button is to turn to the right. Other features will be added as we update the game</p>
+                <h3>Feature 1: Intuitive Controls</h3>
+                <p>To move around the maze you can use these buttons <strong>W,A,D,S.</strong>
+                <p>Use the <strong>W</strong> button to for move forward. <strong>&#11014;</strong></p>
+                <p>Use the <strong>S</strong> button to move bacwards. <strong>&#11015;</strong></p>
+                <p>Use the <strong>A</strong> button to turn to the left. <strong>&#11013;</strong></p>
+                <p>Use the <strong>D</strong> button to turn to the right. <strong>&#10145;</strong></p>
+                <p>Other features will be added as we update the game</p>
+                <p><strong>OR</strong></p>
+                <p>Use the <strong>ARROW UP</strong> button to for move forward. <strong>&#11014;</strong></p>
+                <p>Use the <strong>ARROW DOWN</strong> button to move bacwards. <strong>&#11015;</strong></p>
+                <p>Use the <strong>ARROW LEFT</strong> button to turn to the left. <strong>&#11013;</strong></p>
+                <p>Use the <strong>ARROW RIGHT</strong> button to turn to the right. <strong>&#10145;</strong></p>
+                <p>Other features will be added as we update the game</p>
+            </div>
+            <div class="feature">
+                <img src="images/feature.jpg" alt="features ot the project">
+                <h3>Feature 2: Realistic Graphics</h3>
+                <p>Experience stunning and realistic graphics as you navigate through the maze.</p>
+            </div>
+            <div class="feature">
+                <video width="640" height="480" controls></video>
+                <video src="videos/Demo.mp4" type="video/mp4"></video>
+                <h3>Feature 3: Stunning Game play</h3>
+                <p>Experience stunning and realistic gameplay that challenges your navigation skills.</p>
             </div>
     </section>
     <section id="about">
         <h2>About This Project</h2>
-        <p>This project was inspired by our passion for game development and the challenge of implementing raycasting techniques in C. We chose C because it was part of the requirement. Our team collaborated via GitHub and communicated through WhatsApp to ensure smooth progress and overcome challenges such as SDL initialization issues and raycasting bugs.</p>
+        <p>This project is a portfolio project for holberton school, and was inspired by our passion for game development. We chose C because it was our strong point and it is easier to use. Our team collaborated via GitHub and communicated through WhatsApp to ensure smooth progress and overcome challenges such as SDL initialization issues and raycasting fish eye effect.</p>
+        <p>You can follow the programmers on these social media handle below</p>
+        <p>👉 Oseni's Handle are: <br>
+            <a href="https://www.linkedin.com/in/oseni-matthew-025b4a283/">Linkedin</a><br>
+            <a href="https://github.com/Osenimatthew">github</a><br>
+            <a href="https://x.com/osenimatthew9">Twitter</a><br>
+        </p> 
+        <p> 
+            👉 Valentyn's handle are: <br>
+            <a href="http://www.linkedin.com/in/valentine-ogbuagu-79b977172"> Linkedin</a><br>
+            <a href="https://github.com/Valentynszn"> GitHub</a> <br>
+            <a href="https://x.com/valentine__86"> Twitter</a><br>
+        </p>
     </section>
-    <a href="#home">Home</a>
+    <a href="#home">Back to top</a>
 </body>
 </html>
