@@ -10,9 +10,9 @@ We created a 3D maze game for the chance to combine coding, design, and problem-
 
 ## Keyboard Controls
 - `W` or `(↑)` : Move Forward
-- `S`   : Move Backward
-- `A`   : Rotate Left 
-- `D`   : Rotate Right 
+- `S` or `(↓)` : Backward
+- `A` or `(←)` : Rotate Left 
+- `D` or `(→)` : Rotate Right 
 - `ESC` : Quit Game
 
 ## Game Screenshot
