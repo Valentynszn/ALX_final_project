@@ -9,7 +9,7 @@ A simple Ray Casting 3D engine using SDL as the rendering back-end.
 We created a 3D maze game for the chance to combine coding, design, and problem-solving creatively.
 
 ## Keyboard Controls
-- `W`   : Move Forward
+- `W` or `(↑)` : Move Forward
 - `S`   : Move Backward
 - `A`   : Rotate Left 
 - `D`   : Rotate Right 
